@@ -1,0 +1,78 @@
+.auth__main {
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://res.cloudinary.com/digxsi0uh/image/upload/v1642369270/background%20login/pexels-karolina-grabowska-4195401_twwdrv.jpg");
+  background-color: $primary;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.auth__box-container {
+  background-color: white;
+  box-shadow: 0 0 $dark-grey;
+  border-radius: 2px;
+  padding: 4rem;
+  width: 250px;
+}
+
+.auth__title{
+  color: darken($color: $primary, $amount: 20);
+  margin-bottom: 30px;
+}
+
+.auth__input {
+  color: $primary;
+  border: 0;
+  border-bottom: 1px solid $light-grey;
+  font-size: 16px;
+  margin-bottom: 30px;
+  height: 20px;
+  width: 100%;
+
+  transition: border-bottom .3s ease;
+
+  &:focus {
+    border-bottom: 1px solid $primary;
+    outline: none;
+  } 
+}
+
+.auth__social-networks {
+  // align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.auth__alert-error { 
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 380px) {
+  .auth__box-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
